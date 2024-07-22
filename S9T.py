@@ -21,7 +21,7 @@ class Application(tk.Tk):
         self.bold_font = tkFont.Font(family="Helvetica", size=10, weight="bold")
         self.small_bold_font = tkFont.Font(family="Helvetica", size=8, weight="bold")
         
-        gif_url = "https://cdn.discordapp.com/attachments/1264426808854708307/1264466449880055828/5065326250316708947-ezgif.com-video-to-gif-converter.gif?ex=669f4b26&is=669df9a6&hm=499b268dc3f83a333b9e17b93bdac4925ef0858e67d9d70864deceea8b94ea54&"
+        gif_url = "https://media.discordapp.net/attachments/1158168383741755444/1209894903971315712/2023-07-06_10-24-24.gif?ex=669f2d2f&is=669ddbaf&hm=1f3a5bc8b5ba65b90f3e3ae61f6a3f0235de78eb7e45e1712d03e1df4e3aeb5c&"
         response = requests.get(gif_url)
         img_data = response.content
         self.frames = [Image.open(BytesIO(img_data))]
